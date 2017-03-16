@@ -46,16 +46,10 @@ class ViewController: NSViewController, NSTableViewDataSource, NSTableViewDelega
         return "M-SEARCH * HTTP/1.1\r\nHOST: 239.255.255.250:1900\r\nMAN: \"ssdp:discover\"\r\nMX: 3\r\nST: \(allServices)\r\n\r\n"
     }
     
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-    
     override func viewWillAppear() {
         super.viewWillAppear()
         tableView?.reloadData()
     }
-    
     @IBAction func fireAction(_ sender: Any) {
         guard tableView.selectedRow > -1 else { return }
         let researcher = "M-SEARCH * HTTP/1.1\r\nHOST: 239.255.255.250:1900\r\nMAN: \"ssdp:discover\"\r\nMX: 3\r\nST: \(stCommands[tableView.selectedRow])\r\n\r\n"
@@ -114,6 +108,8 @@ class ViewController: NSViewController, NSTableViewDataSource, NSTableViewDelega
         spin.startAnimation(nil)
         startTimer()
         
+        
+        // This actually is the tinyUPD in action, everything else is just leafs ;)
         DispatchQueue.global().async {
             socket.send(packet: researcher) { [weak self] result in
                 
@@ -136,7 +132,7 @@ class ViewController: NSViewController, NSTableViewDataSource, NSTableViewDelega
         
     }
     
-    // MARK: - TableView Delegate / Datasource
+    // MARK: - TableView Delegate / Datasource stuff
     
     func numberOfRows(in tableView: NSTableView) -> Int {
         return stCommands.count

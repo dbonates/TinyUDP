@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E826C13E1E7AC03C00C73281 /* CustomWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E826C13D1E7AC03C00C73281 /* CustomWindowController.swift */; };
 		E8424F621E68DE14006BBF3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8424F611E68DE14006BBF3C /* AppDelegate.swift */; };
 		E8424F641E68DE14006BBF3C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8424F631E68DE14006BBF3C /* ViewController.swift */; };
 		E8424F661E68DE14006BBF3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8424F651E68DE14006BBF3C /* Assets.xcassets */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E826C13D1E7AC03C00C73281 /* CustomWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomWindowController.swift; sourceTree = "<group>"; };
 		E8424F5E1E68DE14006BBF3C /* TinyUDP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TinyUDP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8424F611E68DE14006BBF3C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E8424F631E68DE14006BBF3C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 			children = (
 				E8CD15F01E693538003526E4 /* UDPTinySocket */,
 				E8424F611E68DE14006BBF3C /* AppDelegate.swift */,
+				E826C13D1E7AC03C00C73281 /* CustomWindowController.swift */,
 				E8424F631E68DE14006BBF3C /* ViewController.swift */,
 				E8424F651E68DE14006BBF3C /* Assets.xcassets */,
 				E8424F6A1E68DE14006BBF3C /* Info.plist */,
@@ -167,6 +170,7 @@
 				E8424F621E68DE14006BBF3C /* AppDelegate.swift in Sources */,
 				E8424F7A1E68E4A3006BBF3C /* DarwinMacros.swift in Sources */,
 				E8CD15EF1E690032003526E4 /* SocketError.swift in Sources */,
+				E826C13E1E7AC03C00C73281 /* CustomWindowController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
